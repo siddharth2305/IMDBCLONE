@@ -1,0 +1,82 @@
+/* css for body */
+body{
+    margin: 0;
+    background-image: url(https://user-images.githubusercontent.com/99132893/214353679-96cd60cb-cab9-4887-92fc-6656165f2451.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-width: 400px;
+}
+/* add style for movie list */
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-small;
+
+}
+/* add style to movie area */
+.movie-area{
+    display:flex;
+    flex-direction: column;
+    width: 270px;
+    height: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(313deg, blue, purple);
+    border-radius: 15px;
+    font-size:medium;
+    box-shadow: 3px 4px 8px 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+/* give fixed sized to image */
+.poster{
+    width: 100%;
+}
+.poster > img{
+    height:200px ;
+    width:90%;
+   
+}
+.poster :hover{
+    transition: transform 1s ease-in-out;
+    transform: scale(1.1);
+}
+/* movie details area */
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.details :hover{
+    color: yellow;
+    transition: transform 1s ease-in-out;
+    transform: scale(1.1);
+}
+/* remove button */
+.details > button{
+    background-color: transparent;
+    border: none;
+    color: orangered;
+}
+.details > button :hover{
+    color: rgba(255, 0, 0, 0.863);
+}
+/* hidden display */
+.hide-display{
+    display: none;
+}
+

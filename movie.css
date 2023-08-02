@@ -1,0 +1,105 @@
+/* css for body */
+body{
+    margin: 0;
+    background-image: url(https://user-images.githubusercontent.com/99132893/214353280-973ba58d-ef90-432a-82fa-a5cfc1012f2c.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-width: 400px;
+}
+/* css for nav bar */
+.nav-bar{
+    display: flex;
+    background-color: #121212;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    color: white;
+}
+.nav-bar > img{
+    width: 100px;
+    height: 30px;
+}
+.nav-bar > input{
+    width: 50%;
+    height: 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 18px;
+}
+.nav-bar > i:hover{
+    color: yellowgreen;
+}
+.nav-bar > button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.nav-bar > button:hover{
+    color: blue;
+}
+/* css for movie content */
+.movie-content{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 40px;
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    justify-content: space-around;
+    /* background-image: linear-gradient(273deg, blue, purple); */
+    background-color: blue;
+    opacity: 1;
+    box-shadow: 4px 4px 9px 2px;
+    /* padding: 1%; */
+}
+.movie-content :hover{
+    color: yellow;
+    transition: transform 1s ease-in-out;
+    transform: scale(1.08);
+}
+.ratings{
+    color: rgb(230, 127, 9);
+    font-size: 20px;
+}
+#poster{
+    width: 50%;
+    height: 100%;
+}
+#description{
+    width: 78%;
+    margin-left: 40px;
+    margin-right: 10px;
+    /* text-align: center; */
+    color: #08f714;
+    padding-left: 10px;
+    padding-right: 15px;
+} 
+/* add media quary to make the web page responsive */
+@media only screen and (max-width: 1100px){  
+    .movie-content{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1000px){  
+    .movie-content{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 900px){  
+    .movie-content{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){  
+    .movie-content{
+        flex-direction: column;
+    }
+}
